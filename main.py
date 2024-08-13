@@ -13,12 +13,12 @@ async def on_ready():
     except Exception as e:
         print(e) 
        
-@bot.tree.command(name="hello")   
+@bot.tree.command(name="ola")   
 async def hello(interaction: discord.Interaction):
-    await interaction.response.send_message(f"hey{interaction.user.mention}! this is a slash command!", epheremal=True)
+    await interaction.response.send_message(f"hey{interaction.user.mention}! Comando slash requisitado pelo discord!", epheremal=True)
            
 @bot.tree.command(name="say")
-@app_commands.describe(thing_to_say= "What should i say?")  
+@app_commands.describe(thing_to_say= "O que quer que eu fale?")  
 async def say(interaction: discord.Interaction, thing_to_say: str):
     await interaction.response.send_message(f"{interaction.user.name} said: '{thing_to_say}'")
     
