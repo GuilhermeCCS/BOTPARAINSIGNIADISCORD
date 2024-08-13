@@ -9,13 +9,13 @@ async def on_ready():
     print("Bot está pronto para uso!")
     try:
         synced = await bot.tree.sync()
-        print(f"Synced{len(synced)} commands(s)")
+        print(f"Synced{len(synced)} comandos")
     except Exception as e:
         print(e) 
        
 @bot.tree.command(name="ola")   
 async def hello(interaction: discord.Interaction):
-    await interaction.response.send_message(f"hey{interaction.user.mention}! Comando slash requisitado pelo discord!", epheremal=True)
+    await interaction.response.send_message(f"Ola{interaction.user.mention}! este é o comando slash requisitado pelo discord!", epheremal=True)
            
 @bot.tree.command(name="say")
 @app_commands.describe(thing_to_say= "O que quer que eu fale?")  
