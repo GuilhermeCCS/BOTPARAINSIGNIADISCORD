@@ -1,0 +1,54 @@
+Discord Bot - README
+Visão Geral
+Este é um bot simples desenvolvido em Python usando a biblioteca discord.py. O bot responde a comandos de barra (slash commands) no Discord, como /hello e /say.
+
+Funcionalidades
+Comando /hello: Envia uma mensagem de saudação mencionando o usuário que executou o comando.
+Comando /say: Repete uma mensagem fornecida pelo usuário.
+Configuração e Execução
+Pré-requisitos
+Python 3.8 ou superior.
+Biblioteca discord.py instalada. Você pode instalar usando:
+bash
+Copiar código
+pip install discord.py
+Configuração do Bot
+Crie um bot no Discord:
+
+Vá ao Portal de Desenvolvedores do Discord.
+Crie uma nova aplicação e depois adicione um bot.
+Copie o token do bot.
+Adicione o bot ao seu servidor:
+
+Vá até a página de OAuth2 no portal de desenvolvedores.
+Selecione bot e as permissões desejadas.
+Copie o link gerado e cole no navegador para adicionar o bot ao seu servidor.
+Execução
+Substitua o token:
+
+No código fornecido, substitua "SEU_TOKEN_AQUI" pelo token do bot.
+Execute o bot:
+
+Execute o script Python:
+bash
+Copiar código
+python nome_do_arquivo.py
+Verifique o bot:
+
+No console, uma mensagem "Bot está pronto para uso!" será exibida quando o bot estiver online.
+Uso
+/hello: O bot responderá com uma saudação mencionando o usuário.
+/say [mensagem]: O bot repetirá a mensagem que você fornecer.
+Contribuição
+Se você deseja contribuir, sinta-se à vontade para fazer um fork do projeto e enviar pull requests.
+
+Licença
+Este projeto está licenciado sob a Licença MIT.
+
+Nota: Certifique-se de que o token do bot esteja seguro e nunca compartilhe publicamente, como em repositórios de código público.
+
+
+
+
+
+
